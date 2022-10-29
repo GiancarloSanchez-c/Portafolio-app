@@ -33,7 +33,7 @@ export const Contact = () => {
                   }
                 >
                   <h2>Get In Touch</h2>
-                  <form action="" method="POST">
+                  <form action="https://getform.io/f/e00214b8-6edc-44a2-9939-e12646895b66" method="POST">
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input

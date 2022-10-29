@@ -82,7 +82,7 @@ export const Banner = () => {
                     Postgres. I am also familiar with MySQL, Sequelize, HTML,
                     CSS, Bootstrap, Tailwind, Git, and GitHub.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

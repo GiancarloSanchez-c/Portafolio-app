@@ -23,6 +23,17 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+nav.navbar .navbar-nav a.nav-link::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -47,28 +58,11 @@ span.navbar-text {
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon a::before {
-  content: "";
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
+
+.social-icon a:hover {
+  padding: 10px;
 }
-.social-icon a:hover::before {
-  transform: scale(1);
-}
-.social-icon a img {
-  width: 40%;
-  z-index: 1;
-  transition: 0.3s ease-in-out;
-}
-.social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
-}
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;

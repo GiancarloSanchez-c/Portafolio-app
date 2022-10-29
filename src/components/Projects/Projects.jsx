@@ -1,5 +1,5 @@
 import { ProjectCard } from "./ProjectCard";
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "./Projects.css";
@@ -20,17 +20,11 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
+                  <p>Check out some of my work right here</p>
                   <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
-                    })}
+                    {projects.map((project, index) => (
+                      <ProjectCard key={index} {...project} />
+                    ))}
                   </Row>
                 </div>
               )}
