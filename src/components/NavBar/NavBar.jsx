@@ -66,7 +66,7 @@ export const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               {socialLinks?.map(({ id, child, href, download }) => (
-                <a key={id} link={id} href={href} download={download}>
+                <a key={id} link={id} href={href} download={download} rel='noreferrer' target='_blank'>
                   {child}
                 </a>
               ))}

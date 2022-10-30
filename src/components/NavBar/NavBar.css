@@ -59,6 +59,10 @@ span.navbar-text {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.social-icon a svg {
+  color: rgb(212, 212, 212);
+}
+
 .social-icon a:hover {
   padding: 10px;
 }
